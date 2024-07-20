@@ -1,2 +1,2 @@
-# compile_and_run_rush00
-Compilador e executor de testes do rush00
+# Compilador e executor do rush00
+Atente-se as instruções dentro do código, boa sorte.
