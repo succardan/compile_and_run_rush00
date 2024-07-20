@@ -21,13 +21,13 @@
 # 5.1 - Edite o arquivo, salve ele e então execute o comando citado no passo 4.2
 
 # Diretório do código-fonte
-src_dir1="rush/$1"
+src_dir1="rush$1"
 src_dir2="$2"
 
 # Compilando os arquivos com as flags -Wall -Wextra -Werror
 # Nesse caso, eu adiciono o "-o" para que DEPOIS que ele compilar tudo, ele crie uma função executável pra você com um nome
 # $src_dir1 é para conseguir pegar a variável src_dir1 criada logo acima
-cc -Wall -Wextra -Werror -o rush_program "$src_dir1/main.c" "$src_dir1/ft_putchar.c" "$src_dir1/$1"
+cc -Wall -Wextra -Werror "$src_dir1/main.c" "$src_dir1/ft_putchar.c" "$src_dir1/$1" -o rush_program "$src_dir1/main.c" "$src_dir1/ft_putchar.c" "$src_dir1/$1"
 
 # Executando o que foi TRANSFORMADO em uma função executável
 # Na teoria, é um .exe pronto para rodar e após rodar ele joga o output dos programas no console
